@@ -1,0 +1,8 @@
+[serial]
+port = /dev/tty.blah
+speed = 9600
+
+[pachube]
+api_key = 5xXYjmKwiBawLuVp_UlOrpzU_L5_R5VjRNPmGD27skI
+url = http://api.pachube.com/v2/feeds/
+feed_id = 29101
