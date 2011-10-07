@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+untitled.py
+
+Created by Peter Loron on 2010-12-25.
+Copyright (c) 2010 __MyCompanyName__. All rights reserved.
+"""
 import serial
 import ConfigParser
 import logging
@@ -43,6 +51,21 @@ def OpenSerialConnection():
 def CloseSerialConnection():
     global con
     con.close()
+
+
+def ReadSerialData():
+    global con
+    
+    try:
+        # loop-a-doop!
+        while True:
+            s = con.readline()
+            print u"Got some!"
+            #f.write(s)
+            #f.flush()
+    except Exception, e:
+        logging.error("Failure while reading serial data.\n\n%s" % (e,))
+        
 
 ########################################################
 
