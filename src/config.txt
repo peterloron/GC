@@ -1,5 +1,5 @@
 [serial]
-port = /dev/tty.blah
+port = /dev/tty.SLAB_USBtoUART
 speed = 9600
 
 [pachube]
