@@ -1,8 +1,26 @@
+[core]
+log_level = info
+log_file = console
+
+
 [serial]
-port = /dev/tty.SLAB_USBtoUART
+#port = /dev/tty.SLAB_USBtoUART
+port = /dev/tty.usbserial-FTDOMRWJ
 speed = 9600
+
+
+[processData]
+interval = 60
+
+
+
+[presistance]
+# pick which persistance modules you want  [none,csv,mysql,...]
+modules = csv
+
+
 
 [pachube]
 api_key = 5xXYjmKwiBawLuVp_UlOrpzU_L5_R5VjRNPmGD27skI
-url = http://api.pachube.com/v2/feeds/
 feed_id = 29101
+upload_interval = 350
