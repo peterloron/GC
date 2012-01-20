@@ -1,0 +1,7 @@
+19 JAN 2012
+
+This is a simple python script that reads serial data, does a little parsing to pick out values and then pushes that data periodically to Pachube.
+
+You will need to create a (currently) free Pachube account to receive and display the data. Once you have the account, proceed to get your API key.
+
+You will need to edit the config.txt file to set the Pachube feed id and api key. Also tweak the serial port string to match whatever device you are using.
